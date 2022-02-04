@@ -26,13 +26,6 @@ dependencies:
 import 'package:language_package/language_package.dart';
 ```
 
-## Language errors because Dart Analyzer crashed on VSCode
-
-If errors like ```Traget URI doesn't...``` or ```Undefined name 'AppLocalizations'``` Reload the Dart Analyzer
-
-1) Open the Command Palette (Ctrl+Shift+P)
-2) Enter and select ```Developer: Reload Window```
-
 ## Usage
 
 TODO: Provide details/examples on usage.
