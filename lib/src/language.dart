@@ -9,8 +9,8 @@ class Language {
   static Future<void> setup() async => await _LocaleHive.setup();
   static _LocaleCubit get cubit => _LocaleCubit._cubit;
 
-  static Locale get current => _LocaleHive._get();
-  static set current(Locale newLocale) {
+  static Locale get locale => _LocaleHive._get();
+  static set locale(Locale newLocale) {
     _LocaleHive._save(locale: newLocale);
     _LocaleCubit._cubit.setLocale(newLocale);
   }
