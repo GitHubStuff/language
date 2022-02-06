@@ -9,6 +9,9 @@ environment:
 
 dependencies:
   cupertino_icons: ^1.0.4
+  theme_management:
+    git:
+      url: https://github.com/RAE-Health/theme_management.git
   extensions_package:
     git:
       url: https://github.com/RAE-Health/extensions_package.git
@@ -18,19 +21,18 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   flutter_modular: ^4.4.0
+  rae_localization_package:
+    git:
+      url: https://github.com/RAE-Health/rae_localization_package.git
   language_package:
     path: ../
-  # rae_localization_package:
-  #   git:
-  #     url: https://github.com/RAE-Health/rae_localization_package.git
-  # theme_management:
-  #   git:
-  #     url: https://github.com/RAE-Health/theme_management.git
-  # theme_mode_widgets:
-  #   git:
-  #     url: https://github.com/RAE-Health/theme_mode_widgets.git
+  widget_tree_package:
+    git:
+      url: https://github.com/RAE-Health/widget_tree_package.git
 
-dependency_overrides: null
+dependency_overrides:
+  language_package:
+    path: ../
 
 dev_dependencies:
   test:
