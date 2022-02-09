@@ -1,6 +1,6 @@
 # language_package
 
-This is a template for the README.md. Replace the *README.md* with this, and fill in empty/missing details.
+Persits the selected language/locale; provides helper for widget-tree rebuild on locale changes; helper in adding languages to the MaterialApp()
 
 ## Install
 
@@ -28,7 +28,12 @@ import 'package:language_package/language_package.dart';
 
 ## Usage
 
-TODO: Provide details/examples on usage.
+```dart
+var v = Language.cubit;    //Accessor to the cubit
+var l = Language.locale;   //Returns the current/active locale
+Language.locale = Locale('es');  //Set the curretn/active locale and, if setup(), persists the local in HIVE
+static const List<Locale> supportedLocales; // Helper to use in MaterialApp() to provide single-truth on supported languages
+```
 
 ## Final Note
 
